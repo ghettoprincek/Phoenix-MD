@@ -10,7 +10,7 @@ DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Desenabling Type false
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
+  ANTILINK: toBool(process.env.ANTI_LINK) || true,
   //_________________________________________________________________________________________________________________________________
   LOGS: toBool(process.env.LOGS) || true,
   //_________________________________________________________________________________________________________________________________
@@ -18,9 +18,9 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   AUTO_REACT: process.env.AUTO_REACT || 'false',
   //_________________________________________________________________________________________________________________________________
-  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'false',
+  AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'true',
   //_________________________________________________________________________________________________________________________________
-  SESSION_ID: process.env.SESSION_ID || "", //Enter Your Session Id Here
+  SESSION_ID: process.env.SESSION_ID || "Phoenix~510ad5be83f23db94eae8e4b16e8be85", //Enter Your Session Id Here
   //_________________________________________________________________________________________________________________________________
   SUDO: process.env.SUDO || "919074692450",
   //_________________________________________________________________________________________________________________________________
@@ -46,9 +46,10 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NAME: process.env.OWNER_NAME || "Abhishek Suresh",
+  OWNER_NAME: process.env.OWNER_NAME || "Abhghettoprincek
+    ",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "918157993101",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "263715698274",
   //_________________________________________________________________________________________________________________________________
   BOT_NAME: process.env.BOT_NAME || "Phoenix-MD",
   //_________________________________________________________________________________________________________________________________
@@ -70,7 +71,7 @@ module.exports = {
           protocol: "postgres",
           dialectOptions: {
             native: true,
-            ssl: { require: true, rejectUnauthorized: false },
+            ssl: { require: true, rejectUnauthorized:true },
           },
           logging: false,
         }),
